@@ -96,10 +96,14 @@ public:
 
     UPROPERTY(EditAnywhere,BlueprintReadWrite,Category=Inventory)
     AInventory* InventoryRef;
+    
+    UFUNCTION(BlueprintCallable)
+        void OnFire();
+        
 protected:
 
     /** Fires a projectile. */
-    void OnFire();
+    
 
     /** Resets HMD orientation and position in VR. */
     void OnResetVR();

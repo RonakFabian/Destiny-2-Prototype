@@ -38,6 +38,7 @@ void AD2Projectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPri
 	{
 		OtherComp->AddImpulseAtLocation(GetVelocity() * 100.0f, GetActorLocation());
 
-		Destroy();
+		
 	}
+	Destroy();
 }
