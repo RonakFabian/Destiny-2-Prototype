@@ -48,6 +48,8 @@ class AD2Character : public ACharacter
 
 public:
     AD2Character();
+
+    void PostInitializeComponents() override;
     
     UFUNCTION(BlueprintCallable,Category=Weapon)
     void EquipPrimaryWeapon(AWeapon* Weapon);
@@ -59,7 +61,10 @@ protected:
 public:
     
     UPROPERTY(EditAnywhere,BlueprintReadWrite, Category=Weapon)
-    AWeapon* PrimaryWeapon;
+    TSubclassOf<class AWeapon> PrimaryWeaponRef;
+
+    UPROPERTY(EditAnywhere,BlueprintReadWrite, Category=Weapon)
+     AWeapon* PrimaryWeapon;
     
     UPROPERTY(EditAnywhere,BlueprintReadWrite, Category=Mesh)
     class USkeletalMeshComponent* Mesh1P;
@@ -72,21 +77,18 @@ public:
     UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
     float BaseLookUpRate;
 
-    /** Gun muzzle's offset from the characters location */
-    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=Gameplay)
-    FVector GunOffset;
-
-    /** Projectile class to spawn */
-    UPROPERTY(EditDefaultsOnly, Category=Projectile)
-    TSubclassOf<class AD2Projectile> ProjectileClass;
-
-    /** Sound to play each time we fire */
-    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=Gameplay)
-    class USoundBase* FireSound;
-
-    /** AnimMontage to play each time we fire */
-    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
-    class UAnimMontage* FireAnimation;
+    // /** Gun muzzle's offset from the characters location */
+    // UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=Gameplay)
+    // FVector GunOffset;
+    //
+    //
+    // /** Sound to play each time we fire */
+    // UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=Gameplay)
+    // class USoundBase* FireSound;
+    //
+    // /** AnimMontage to play each time we fire */
+    // UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
+    // class UAnimMontage* FireAnimation;
 
     /** Whether to use motion controller location for aiming. */
     // UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)

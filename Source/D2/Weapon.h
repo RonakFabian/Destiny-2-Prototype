@@ -3,12 +3,13 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Item.h"
+
+#include "D2Projectile.h"
 #include "GameFramework/Actor.h"
 #include "Weapon.generated.h"
 
 UCLASS()
-class D2_API AWeapon : public AActor, public IItem
+class D2_API AWeapon : public AActor
 {
     GENERATED_BODY()
 
@@ -35,7 +36,7 @@ public:
 
     /** Projectile class to spawn */
     UPROPERTY(EditDefaultsOnly, Category=Projectile)
-    TSubclassOf<class AD2Projectile> ProjectileClass;
+    TSubclassOf< AD2Projectile> ProjectileClass;
 
     /** Sound to play each time we fire */
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=Gameplay)
@@ -50,7 +51,7 @@ protected:
     virtual void BeginPlay() override;
 
     /** Fires a projectile. */
-    void OnFire();
+   
 
   
 
@@ -61,4 +62,5 @@ protected:
 public:
     // Called every frame
     virtual void Tick(float DeltaTime) override;
+    void Shoot();
 };

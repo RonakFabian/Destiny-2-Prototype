@@ -55,7 +55,7 @@ AD2Character::AD2Character()
     // FP_MuzzleLocation->SetRelativeLocation(FVector(0.2f, 48.4f, -10.6f));
 
     // Default offset from the character location for projectiles to spawn
-    GunOffset = FVector(100.0f, 0.0f, 10.0f);
+    //GunOffset = FVector(100.0f, 0.0f, 10.0f);
 
     // Note: The ProjectileClass and the skeletal mesh/anim blueprints for Mesh1P, FP_Gun, and VR_Gun 
     // are set in the derived blueprint asset named MyCharacter to avoid direct content references in C++.
@@ -83,12 +83,17 @@ AD2Character::AD2Character()
 
     //Uncomment the following line to turn motion controllers on by default:
     //bUsingMotionControllers = true;
-   
 }
 
-void AD2Character::EquipPrimaryWeapon(AWeapon* Weapon)
+void AD2Character::PostInitializeComponents()
 {
+    Super::PostInitializeComponents();
+    FVector Location(0.0f, 0.0f, 0.0f);
+    FRotator Rotation(0.0f, 0.0f, 0.0f);
+    FActorSpawnParameters SpawnInfo;
+    PrimaryWeapon = GetWorld()->SpawnActor<AWeapon>(PrimaryWeaponRef,Location, Rotation, SpawnInfo);
 }
+
 
 void AD2Character::BeginPlay()
 {
@@ -96,7 +101,7 @@ void AD2Character::BeginPlay()
     Super::BeginPlay();
 
     //Attach gun mesh component to Skeleton, doing it here because the skeleton is not yet created in the constructor
-    // FP_Gun->AttachToComponent(Mesh1P, FAttachmentTransformRules(EAttachmentRule::SnapToTarget, true), TEXT("GripPoint"));
+    // 
     //
     // // Show or hide the two versions of the gun based on whether or not we're using motion controllers.
     // if (bUsingMotionControllers)
@@ -109,10 +114,10 @@ void AD2Character::BeginPlay()
     // 	VR_Gun->SetHiddenInGame(true, true);
     // 	Mesh1P->SetHiddenInGame(false, true);
     // }
-   // FVector Location(0.0f, 0.0f, 0.0f);
-   // FRotator Rotation(0.0f, 0.0f, 0.0f);
-  //  FActorSpawnParameters SpawnInfo;
-  //  PrimaryWeapon= GetWorld()->SpawnActor<AWeapon>(Location, Rotation, SpawnInfo);
+    
+    if(PrimaryWeapon)
+        EquipPrimaryWeapon(PrimaryWeapon);
+  
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -148,14 +153,28 @@ void AD2Character::SetupPlayerInputComponent(class UInputComponent* PlayerInputC
     PlayerInputComponent->BindAxis("LookUpRate", this, &AD2Character::LookUpAtRate);
 }
 
+void AD2Character::EquipPrimaryWeapon(AWeapon* Weapon)
+{
+
+    Weapon->AttachToComponent(
+        Mesh1P,
+        FAttachmentTransformRules(EAttachmentRule::SnapToTarget,true),
+        TEXT("GripPoint")
+    );
+
+    Weapon->SetOwner(this);
+}
+
 void AD2Character::OnFire()
 {
     // try and fire a projectile
-    if (ProjectileClass != NULL)
+    if (PrimaryWeapon != NULL)
     {
-        UWorld* const World = GetWorld();
-        if (World != NULL)
         {
+            //
+            // UWorld* const World = GetWorld();
+            // if (World != NULL)
+            // {
             // if (bUsingMotionControllers)
             // {
             // 	const FRotator SpawnRotation = VR_MuzzleLocation->GetComponentRotation();
@@ -175,24 +194,29 @@ void AD2Character::OnFire()
             // 	// spawn the projectile at the muzzle
             // 	World->SpawnActor<AD2Projectile>(ProjectileClass, SpawnLocation, SpawnRotation, ActorSpawnParams);
             // }
+            // }
         }
+        PrimaryWeapon->Shoot();
+        
     }
-
-    // try and play the sound if specified
-    if (FireSound != NULL)
+    
     {
-        UGameplayStatics::PlaySoundAtLocation(this, FireSound, GetActorLocation());
-    }
-
-    // try and play a firing animation if specified
-    if (FireAnimation != NULL)
-    {
-        // Get the animation object for the arms mesh
-        UAnimInstance* AnimInstance = Mesh1P->GetAnimInstance();
-        if (AnimInstance != NULL)
-        {
-            AnimInstance->Montage_Play(FireAnimation, 1.f);
-        }
+        // try and play the sound if specified
+        // if (FireSound != NULL)
+        // {
+        //     UGameplayStatics::PlaySoundAtLocation(this, FireSound, GetActorLocation());
+        // }
+        //
+        // // try and play a firing animation if specified
+        // if (FireAnimation != NULL)
+        // {
+        //     // Get the animation object for the arms mesh
+        //     UAnimInstance* AnimInstance = Mesh1P->GetAnimInstance();
+        //     if (AnimInstance != NULL)
+        //     {
+        //         AnimInstance->Montage_Play(FireAnimation, 1.f);
+        //     }
+        // }
     }
 }
 

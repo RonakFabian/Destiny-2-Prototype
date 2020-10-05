@@ -9214,7 +9214,7 @@
             <e p="src" t="Include">
               <e p="com" t="Include">
                 <e p="epicgames" t="Include">
-                  <e p="Ue4" t="Include">
+                  <e p="ue4" t="Include">
                     <e p="CameraPlayer14.java" t="Include" />
                   </e>
                 </e>
@@ -14065,7 +14065,7 @@
               </e>
               <e p="IDisplayClusterRenderManager.h" t="Include" />
               <e p="PostProcess" t="Include">
-                <e p="IDisplayClusterPostProcess.h" t="Include" />
+                <e p="IDisplayClusterPostprocess.h" t="Include" />
               </e>
               <e p="Projection" t="Include">
                 <e p="IDisplayClusterProjectionPolicy.h" t="Include" />
@@ -14170,7 +14170,7 @@
             </e>
           </e>
           <e p="Public" t="Include">
-            <e p="IDisplayClusterPostProcess.h" t="Include" />
+            <e p="IDisplayClusterPostprocess.h" t="Include" />
           </e>
         </e>
         <e p="DisplayClusterProjection" t="Include">
@@ -27236,7 +27236,7 @@
               <e p="VolumeTextureFactory.cpp" t="Include" />
               <e p="WorldFactory.cpp" t="Include" />
             </e>
-            <e p="FBX" t="Include">
+            <e p="Fbx" t="Include">
               <e p="FbxAnimationExport.cpp" t="Include" />
               <e p="FbxAnimSequenceImportData.cpp" t="Include" />
               <e p="FbxAssetImportData.cpp" t="Include" />
@@ -40772,7 +40772,7 @@
           <e p="Facebook.Build.cs" t="Include" />
           <e p="FBNotifications.tps" t="Include" />
         </e>
-        <e p="FBX" t="Include">
+        <e p="Fbx" t="Include">
           <e p="AutodeskFBX.tps" t="Include" />
           <e p="FBX.Build.cs" t="Include" />
         </e>
