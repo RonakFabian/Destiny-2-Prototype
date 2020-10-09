@@ -12,6 +12,8 @@ AD2HUD::AD2HUD()
 	// Set the crosshair texture
 	static ConstructorHelpers::FObjectFinder<UTexture2D> CrosshairTexObj(TEXT("/Game/FirstPerson/Textures/FirstPersonCrosshair"));
 	CrosshairTex = CrosshairTexObj.Object;
+	bCanShowCrosshair=false;
+	
 }
 
 
@@ -28,8 +30,11 @@ void AD2HUD::DrawHUD()
 	const FVector2D CrosshairDrawPosition( (Center.X),
 										   (Center.Y + 20.0f));
 
-	// draw the crosshair
-	FCanvasTileItem TileItem( CrosshairDrawPosition, CrosshairTex->Resource, FLinearColor::White);
-	TileItem.BlendMode = SE_BLEND_Translucent;
-	Canvas->DrawItem( TileItem );
+	if(bCanShowCrosshair)
+	{
+		// draw the crosshair
+		FCanvasTileItem TileItem( CrosshairDrawPosition, CrosshairTex->Resource, FLinearColor::White);
+		TileItem.BlendMode = SE_BLEND_Translucent;
+		Canvas->DrawItem( TileItem );
+	}
 }

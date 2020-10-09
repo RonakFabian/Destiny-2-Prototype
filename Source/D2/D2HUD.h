@@ -16,6 +16,9 @@ public:
 
 	/** Primary draw call for the HUD */
 	virtual void DrawHUD() override;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	bool bCanShowCrosshair;
 
 private:
 	/** Crosshair asset pointer */
