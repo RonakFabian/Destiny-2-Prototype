@@ -24,12 +24,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ea7791a-40c4-494f-bedc-b669ad96618d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.D2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.D2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/FirstPersonCPP/Blueprints/FirstPersonCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/FirstPersonCPP/Blueprints/FirstPersonCharacter.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/FirstPersonCPP/Maps/FirstPersonExampleMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/FirstPersonCPP/Maps/FirstPersonExampleMap.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Quest/QuestComponent.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Quest/QuestComponent.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/D2/D2HUD.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/D2/D2HUD.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/D2/D2HUD.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/D2/D2HUD.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.D2/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.D2/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Bp_D2GameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Bp_D2GameMode.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Enemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Enemy.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/LevelManager.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/LevelManager.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/Strike.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/Strike.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/D2.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/D2.uproject" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -425,6 +425,7 @@
       <workItem from="1601896170070" duration="2737000" />
       <workItem from="1601908429577" duration="652000" />
       <workItem from="1601995864162" duration="720000" />
+      <workItem from="1602691406544" duration="652000" />
     </task>
     <servers />
   </component>

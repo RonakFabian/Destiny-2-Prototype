@@ -47,6 +47,8 @@
           <e p="PatrolComponent.h" t="Include" />
           <e p="PatrollingGuard.cpp" t="Include" />
           <e p="PatrollingGuard.h" t="Include" />
+          <e p="Quest.cpp" t="Include" />
+          <e p="Quest.h" t="Include" />
           <e p="TP_ThirdPerson" t="Include">
             <e p="TP_ThirdPerson.h" t="Include" />
             <e p="TP_ThirdPersonCharacter.cpp" t="Include" />
