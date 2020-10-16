@@ -45,6 +45,8 @@
           <e p="Inventory.h" t="Include" />
           <e p="Item.cpp" t="Include" />
           <e p="Item.h" t="Include" />
+          <e p="MissionActor.cpp" t="Include" />
+          <e p="MissionActor.h" t="Include" />
           <e p="MIssionDriver.cpp" t="Include" />
           <e p="MIssionDriver.h" t="Include" />
           <e p="PatrolComponent.cpp" t="Include" />

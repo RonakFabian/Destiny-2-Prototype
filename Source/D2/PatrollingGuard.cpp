@@ -6,11 +6,10 @@
 void APatrollingGuard::BeginPlay()
 {
     Super::BeginPlay();
-    
 }
 
 void APatrollingGuard::Tick(float delta)
 {
     Super::Tick(delta);
-    
 }
+

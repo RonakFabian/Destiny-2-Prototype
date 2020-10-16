@@ -33,10 +33,12 @@ public:
     UPROPERTY( EditAnywhere)
     TArray<FMissionData> MissionData;
 
+    UPROPERTY(EditAnywhere)
+    int32 currentMissionEventIndex;
 
     UFUNCTION(BlueprintCallable,CallInEditor)
     void LoadMissionScript();
 
     UFUNCTION(BlueprintCallable)
-   void ExecuteNextMissionEvent();
+    void ExecuteNextMissionEvent();
 };
