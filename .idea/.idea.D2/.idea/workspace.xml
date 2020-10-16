@@ -25,11 +25,13 @@
   <component name="ChangeListManager">
     <list default="true" id="3ea7791a-40c4-494f-bedc-b669ad96618d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.D2/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.D2/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Bp_D2GameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Bp_D2GameMode.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Enemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Enemy.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/LevelManager.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/LevelManager.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.D2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.D2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/TriggerBox_Blueprint.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/TriggerBox_Blueprint.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/Strike.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/Strike.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/D2.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/D2.uproject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Quest/MissionData.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Quest/NewDataTable.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Quest/StrikeOne.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Quest/StrikeOne.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/ThirdPersonCPP/Blueprints/NPC.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ThirdPersonCPP/Blueprints/NPC.uasset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +68,10 @@
         <option value="$PROJECT_DIR$/Source/D2/D2Character.h" />
         <option value="$PROJECT_DIR$/Source/D2/D2HUD.h" />
         <option value="$PROJECT_DIR$/Source/D2/D2HUD.cpp" />
+        <option value="$PROJECT_DIR$/Source/D2/MIssionDriver.h" />
+        <option value="$PROJECT_DIR$/Source/D2/IMissionEvent.h" />
+        <option value="$PROJECT_DIR$/Source/D2/MIssionDriver.cpp" />
+        <option value="$PROJECT_DIR$/Source/D2/StructandEnum.h" />
       </list>
     </option>
   </component>
@@ -426,6 +432,8 @@
       <workItem from="1601908429577" duration="652000" />
       <workItem from="1601995864162" duration="720000" />
       <workItem from="1602691406544" duration="652000" />
+      <workItem from="1602785263300" duration="4325000" />
+      <workItem from="1602827249165" duration="3670000" />
     </task>
     <servers />
   </component>

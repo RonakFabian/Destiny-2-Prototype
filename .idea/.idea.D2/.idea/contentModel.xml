@@ -39,16 +39,22 @@
           <e p="D2HUD.h" t="Include" />
           <e p="D2Projectile.cpp" t="Include" />
           <e p="D2Projectile.h" t="Include" />
+          <e p="IMissionEvent.cpp" t="Include" />
+          <e p="IMissionEvent.h" t="Include" />
           <e p="Inventory.cpp" t="Include" />
           <e p="Inventory.h" t="Include" />
           <e p="Item.cpp" t="Include" />
           <e p="Item.h" t="Include" />
+          <e p="MIssionDriver.cpp" t="Include" />
+          <e p="MIssionDriver.h" t="Include" />
           <e p="PatrolComponent.cpp" t="Include" />
           <e p="PatrolComponent.h" t="Include" />
           <e p="PatrollingGuard.cpp" t="Include" />
           <e p="PatrollingGuard.h" t="Include" />
           <e p="Quest.cpp" t="Include" />
           <e p="Quest.h" t="Include" />
+          <e p="StructandEnum.cpp" t="Include" />
+          <e p="StructandEnum.h" t="Include" />
           <e p="TP_ThirdPerson" t="Include">
             <e p="TP_ThirdPerson.h" t="Include" />
             <e p="TP_ThirdPersonCharacter.cpp" t="Include" />
