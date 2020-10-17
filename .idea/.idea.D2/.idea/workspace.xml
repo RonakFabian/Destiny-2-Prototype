@@ -23,18 +23,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ea7791a-40c4-494f-bedc-b669ad96618d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.D2/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.D2/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.D2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.D2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/TriggerBox_Blueprint.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/TriggerBox_Blueprint.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Maps/Strike.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/Strike.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Quest/StrikeOne.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Quest/StrikeOne.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/D2/IMissionEvent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/D2/IMissionEvent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/D2/MIssionDriver.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/D2/MIssionDriver.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/D2/MIssionDriver.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/D2/MIssionDriver.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/D2/PatrollingGuard.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/D2/PatrollingGuard.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/D2/PatrollingGuard.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/D2/PatrollingGuard.h" afterDir="false" />
-    </list>
+    <list default="true" id="3ea7791a-40c4-494f-bedc-b669ad96618d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -439,7 +428,7 @@
       <workItem from="1602785263300" duration="4325000" />
       <workItem from="1602827249165" duration="3670000" />
       <workItem from="1602857616769" duration="5314000" />
-      <workItem from="1602863153234" duration="2997000" />
+      <workItem from="1602863153234" duration="3398000" />
     </task>
     <servers />
   </component>
