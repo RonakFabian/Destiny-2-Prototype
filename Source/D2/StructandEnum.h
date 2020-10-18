@@ -3,7 +3,6 @@
 #pragma once
 
 #include "CoreMinimal.h"
-
 #include "Engine/DataTable.h"
 #include "Sound/SoundWave.h"
 #include "UObject/NoExportTypes.h"
@@ -27,7 +26,8 @@ enum class FMissionEventType : uint8
     Kill,
     Interact,
     End,
-    Boss
+    Boss,
+    Delay
 };
 
 UENUM(BlueprintType)
@@ -54,5 +54,7 @@ struct FMissionData:public FTableRowBase
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Dialouge")
     TSoftObjectPtr<USoundWave> AudioFileName;
-    
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Delay")
+    float DelayTime;
 };

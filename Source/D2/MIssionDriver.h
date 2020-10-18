@@ -8,12 +8,18 @@
 #include "StructandEnum.h"
 #include "Engine/DataTable.h"
 #include "GameFramework/Actor.h"
+#include "UObject/ObjectMacros.h"
+
 #include "MIssionDriver.generated.h"
 
 UCLASS()
 class D2_API AMIssionDriver : public AActor
 {
     GENERATED_BODY()
+
+    
+    UPROPERTY()
+    FTimerHandle FTimerHandle;
 
 public:
     // Sets default values for this actor's properties
@@ -41,4 +47,10 @@ public:
 
     UFUNCTION(BlueprintCallable)
     void ExecuteNextMissionEvent();
+
+
+    void Delay();
+    void GoTo();
+    void Interact();
+    void BeginMissionEvent();
 };

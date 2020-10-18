@@ -6,11 +6,11 @@
 #include "IMissionEvent.h"
 #include "MissionActor.h"
 #include "PatrollingGuard.h"
+#include "TimerManager.h"
 
-// Sets default values
+
 AMIssionDriver::AMIssionDriver()
 {
-    // Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
     PrimaryActorTick.bCanEverTick = true;
     currentMissionEventIndex = -1;
 }
@@ -52,34 +52,46 @@ void AMIssionDriver::ExecuteNextMissionEvent()
         switch (MissionData[currentMissionEventIndex].MissionEventType)
         {
         case FMissionEventType::Boss:
-            break;
+            {
+                BeginMissionEvent();
+                break;
+            }
 
         case FMissionEventType::Dialogue:
-            break;
+            {
+                BeginMissionEvent();
+                break;
+            }
+
         case FMissionEventType::End:
             UE_LOG(LogTemp, Warning, TEXT("End Mission"));
             break;
         case FMissionEventType::Interact:
-            break;
+            {
+                BeginMissionEvent();
+                break;
+            }
+
         case FMissionEventType::GoTo:
             {
-                AMissionActor* Interactable = Cast<AMissionActor>(
-                    MissionData[currentMissionEventIndex].MissionActor.LoadSynchronous());
-                UE_LOG(LogTemp, Warning, TEXT("%s"), *MissionData[currentMissionEventIndex].MissionActor->GetName());
-
-                if (Interactable)
-                {
-                    UE_LOG(LogTemp, Warning, TEXT("True"));
-                    Interactable->BeginExecuteMissionEvent();
-                }
-                else
-                {
-                    UE_LOG(LogTemp, Warning, TEXT("Fail"));
-                }
+                BeginMissionEvent();
                 break;
             }
         case FMissionEventType::Kill:
-            break;
+            {
+                BeginMissionEvent();
+                break;
+            }
+
+        case FMissionEventType::Delay:
+            {
+                GetWorld()->GetTimerManager().SetTimer(FTimerHandle, [this]()
+                {
+                    Delay();
+                }, MissionData[currentMissionEventIndex].DelayTime, false);
+                break;
+            }
+        default: ;
         }
 
         if (MissionData[currentMissionEventIndex].MissionReturnType == FMissionReturnType::Immediate)
@@ -88,5 +100,63 @@ void AMIssionDriver::ExecuteNextMissionEvent()
     else
     {
         UE_LOG(LogTemp, Warning, TEXT("Reached EOS or Invalid Mission Event Index"));
+    }
+}
+
+// GetWorldTimerManager().SetTimer(TimerHandle, this , &Method, DelayBetweenLoops , LoopTheTimer, FirstDelayInSeconds);
+void AMIssionDriver::Delay()
+{
+    UE_LOG(LogTemp, Warning, TEXT("Delay End"));
+    ExecuteNextMissionEvent();
+}
+
+void AMIssionDriver::GoTo()
+{
+    AMissionActor* Interactable = Cast<AMissionActor>(
+        MissionData[currentMissionEventIndex].MissionActor.LoadSynchronous());
+    UE_LOG(LogTemp, Warning, TEXT("%s"), *MissionData[currentMissionEventIndex].MissionActor->GetName());
+
+    if (Interactable)
+    {
+        UE_LOG(LogTemp, Warning, TEXT("True"));
+        Interactable->BeginExecuteMissionEvent();
+    }
+    else
+    {
+        UE_LOG(LogTemp, Warning, TEXT("Fail"));
+    }
+}
+
+void AMIssionDriver::Interact()
+{
+    AMissionActor* Interactable = Cast<AMissionActor>(
+        MissionData[currentMissionEventIndex].MissionActor.LoadSynchronous());
+    UE_LOG(LogTemp, Warning, TEXT("%s"), *MissionData[currentMissionEventIndex].MissionActor->GetName());
+
+    if (Interactable)
+    {
+        UE_LOG(LogTemp, Warning, TEXT("True"));
+        Interactable->BeginExecuteMissionEvent();
+    }
+    else
+    {
+        UE_LOG(LogTemp, Warning, TEXT("Fail"));
+    }
+}
+
+void AMIssionDriver::BeginMissionEvent()
+{
+    AMissionActor* Interactable = Cast<AMissionActor>(
+        MissionData[currentMissionEventIndex].MissionActor.LoadSynchronous());
+    UE_LOG(LogTemp, Warning, TEXT("%s"), *MissionData[currentMissionEventIndex].MissionActor->GetName());
+
+    if (Interactable)
+    {
+        UE_LOG(LogTemp, Warning, TEXT("True"));
+        Interactable->BeginExecuteMissionEvent();
+    }
+    else
+    {
+        UE_LOG(LogTemp, Warning, TEXT("Fail"));
     }
 }
