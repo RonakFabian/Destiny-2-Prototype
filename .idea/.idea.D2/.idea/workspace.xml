@@ -25,14 +25,11 @@
   <component name="ChangeListManager">
     <list default="true" id="3ea7791a-40c4-494f-bedc-b669ad96618d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.D2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.D2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_TriggerMission.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_TriggerMission.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultEditor.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEditor.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/BP_Inventory.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/BP_Weapon.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/FirstPersonCPP/Blueprints/FirstPersonCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/FirstPersonCPP/Blueprints/FirstPersonCharacter.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/Strike.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/Strike.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Quest/StrikeOne.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Quest/StrikeOne.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/UMG/WayPoint.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UMG/WayPoint.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/D2/MIssionDriver.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/D2/MIssionDriver.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/D2/MIssionDriver.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/D2/MIssionDriver.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/D2/MissionActor.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/D2/MissionActor.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/D2/StructandEnum.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/D2/StructandEnum.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -441,6 +438,7 @@
       <workItem from="1602863153234" duration="3398000" />
       <workItem from="1602947055066" duration="2119000" />
       <workItem from="1603022065242" duration="1587000" />
+      <workItem from="1603275500701" duration="530000" />
     </task>
     <servers />
   </component>
