@@ -25,11 +25,11 @@
   <component name="ChangeListManager">
     <list default="true" id="3ea7791a-40c4-494f-bedc-b669ad96618d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.D2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.D2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEditor.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEditor.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BP_Inventory.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BP_Weapon.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BasePickUp.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BasePickUp.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Enemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Enemy.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/FirstPersonCPP/Blueprints/FirstPersonCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/FirstPersonCPP/Blueprints/FirstPersonCharacter.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/Strike.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/Strike.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/D2/D2HUD.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/D2/D2HUD.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +63,6 @@
         <option value="$PROJECT_DIR$/Source/D2/D2Projectile.cpp" />
         <option value="$PROJECT_DIR$/Source/D2/D2Character.h" />
         <option value="$PROJECT_DIR$/Source/D2/D2HUD.h" />
-        <option value="$PROJECT_DIR$/Source/D2/D2HUD.cpp" />
         <option value="$PROJECT_DIR$/Source/D2/PatrollingGuard.cpp" />
         <option value="$PROJECT_DIR$/Source/D2/IMissionEvent.h" />
         <option value="$PROJECT_DIR$/Source/D2/PatrollingGuard.h" />
@@ -72,6 +71,7 @@
         <option value="$PROJECT_DIR$/Source/D2/StructandEnum.h" />
         <option value="$PROJECT_DIR$/Source/D2/MIssionDriver.h" />
         <option value="$PROJECT_DIR$/Source/D2/MIssionDriver.cpp" />
+        <option value="$PROJECT_DIR$/Source/D2/D2HUD.cpp" />
       </list>
     </option>
   </component>
@@ -439,6 +439,8 @@
       <workItem from="1602947055066" duration="2119000" />
       <workItem from="1603022065242" duration="1587000" />
       <workItem from="1603275500701" duration="530000" />
+      <workItem from="1603285556560" duration="394000" />
+      <workItem from="1603356335233" duration="850000" />
     </task>
     <servers />
   </component>

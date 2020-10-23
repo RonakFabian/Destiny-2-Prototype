@@ -12,7 +12,7 @@ AD2HUD::AD2HUD()
 	// Set the crosshair texture
 	static ConstructorHelpers::FObjectFinder<UTexture2D> CrosshairTexObj(TEXT("/Game/FirstPerson/Textures/FirstPersonCrosshair"));
 	CrosshairTex = CrosshairTexObj.Object;
-	bCanShowCrosshair=false;
+	bCanShowCrosshair=true;
 	
 }
 
