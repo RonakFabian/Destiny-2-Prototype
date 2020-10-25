@@ -2,8 +2,10 @@
 
 
 #include "Weapon.h"
-#include "GameFramework/Controller.h"
+#include "D2Character.h"
+#include "Animation/AnimInstance.h"
 #include "Components/SkeletalMeshComponent.h"
+#include "Kismet/GameplayStatics.h"
 
 // Sets default values
 AWeapon::AWeapon()
@@ -31,26 +33,29 @@ void AWeapon::BeginPlay()
     Super::BeginPlay();
 }
 
-void AWeapon::Shoot()
+void AWeapon::Shoot(AActor* Player)
 {
-    UWorld* const World = GetWorld();
-    if (World != NULL)
+    auto Mesh = Cast<AD2Character>(Player)->Mesh1P;
+    if (FireSound != NULL)
     {
-        const FRotator SpawnRotation = FP_MuzzleLocation->GetRightVector().Rotation();
+        UGameplayStatics::PlaySoundAtLocation(this, FireSound, GetActorLocation());
+    }
 
-        // MuzzleOffset is in camera space, so transform it to world space before offsetting from the character location to find the final muzzle position
-        const FVector SpawnLocation = ((FP_MuzzleLocation != nullptr)
-                                           ? FP_MuzzleLocation->GetComponentLocation()
-                                           : GetActorLocation());
+    // try and play a firing animation if specified
+    if (FireAnimation != NULL)
+    {
+        // Get the animation object for the arms mesh
+        UAnimInstance* AnimInstance = Mesh->GetAnimInstance();
+        if (AnimInstance != NULL)
+        {
+            AnimInstance->Montage_Play(FireAnimation, 1.f);
+        }
+    }
 
-        //Set Spawn Collision Handling Override
-        FActorSpawnParameters ActorSpawnParams;
-        ActorSpawnParams.SpawnCollisionHandlingOverride =
-            ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButDontSpawnIfColliding;
-
-
-        // spawn the projectile at the muzzle
-        World->SpawnActor<AD2Projectile>(ProjectileClass, SpawnLocation, SpawnRotation, ActorSpawnParams);
+    if (MuzzleParticle)
+    {
+        UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), MuzzleParticle,FP_MuzzleLocation->GetComponentTransform());
+                                                
     }
 }
 
@@ -62,10 +67,16 @@ void AWeapon::SetUpAttachment(USkeletalMeshComponent* Mesh)
 
 void AWeapon::Equip()
 {
+    SetActorHiddenInGame(false);
+    SetActorEnableCollision(true);
+    SetActorTickEnabled(true);
 }
 
 void AWeapon::Unequip()
 {
+    SetActorHiddenInGame(true);
+    SetActorEnableCollision(false);
+    SetActorTickEnabled(false);
 }
 
 // Called every frame

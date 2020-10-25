@@ -3,6 +3,7 @@
 #include "D2Projectile.h"
 #include "GameFramework/ProjectileMovementComponent.h"
 #include "Components/SphereComponent.h"
+#include "Kismet/GameplayStatics.h"
 
 AD2Projectile::AD2Projectile() 
 {
@@ -38,7 +39,11 @@ void AD2Projectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPri
 	{
 		OtherComp->AddImpulseAtLocation(GetVelocity() * 100.0f, GetActorLocation());
 
-		
+		if (ImpactParticle)
+		{
+			UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ImpactParticle,GetActorTransform());
+                                                
+		}
 	}
 	Destroy();
 }
