@@ -24,21 +24,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ea7791a-40c4-494f-bedc-b669ad96618d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.D2/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.D2/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.D2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.D2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultInput.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultInput.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_Inventory.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_Inventory.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_Weapon.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Cyclops.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Cyclops.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/FirstPersonCPP/Blueprints/FirstPersonCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/FirstPersonCPP/Blueprints/FirstPersonCharacter.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/FirstPersonCPP/Blueprints/FirstPersonProjectile.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/FirstPersonCPP/Blueprints/FirstPersonProjectile.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Maps/Strike.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/Strike.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/D2/D2Character.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/D2/D2Character.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/D2/D2Character.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/D2/D2Character.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/D2/D2Projectile.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/D2/D2Projectile.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/D2/D2Projectile.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/D2/D2Projectile.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/D2/Weapon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/D2/Weapon.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/D2/Weapon.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/D2/Weapon.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/UMG/InventorySlot.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UMG/InventorySlot.uasset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
