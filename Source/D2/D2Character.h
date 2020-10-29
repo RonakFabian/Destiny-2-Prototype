@@ -47,7 +47,7 @@ public:
     AWeapon* PrimaryWeapon;
 
     AWeapon* currentWeapon;
-    
+
     UPROPERTY(EditAnywhere,BlueprintReadWrite, Category=Weapon)
     AWeapon* SecondaryWeapon;
 
@@ -70,6 +70,11 @@ public:
     void OnFire();
 
     UFUNCTION(BlueprintCallable)
+    void OnReload();
+
+   
+
+    UFUNCTION(BlueprintCallable)
     void OnStartFire();
 
     UFUNCTION(BlueprintCallable)
@@ -77,7 +82,7 @@ public:
 
     UFUNCTION(BlueprintCallable)
     void EquipWeaponPrimary();
-    
+
     UFUNCTION(BlueprintCallable)
     void EquipWeaponSecondary();
 

@@ -40,8 +40,19 @@ public:
     FVector GunOffset;
 
 
-    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=Gameplay)
-    float TimeBetweenShots;
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=WeaponData)
+    float RateOfFire;
+    
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=WeaponData)
+    int TotalAmmo;
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=WeaponData)
+    int MagazineSize;
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=WeaponData)
+    int currentAmmo;
+        
+        
     /** Sound to play each time we fire */
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=Gameplay)
     class USoundBase* FireSound;
@@ -53,6 +64,11 @@ public:
     void Equip();
 
     void Unequip();
+
+    UPROPERTY()
+    bool canShoot;
+    
+    void Reload();
 
 protected:
     // Called when the game starts or when spawned

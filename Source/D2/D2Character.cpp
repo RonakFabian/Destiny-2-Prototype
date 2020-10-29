@@ -81,6 +81,7 @@ void AD2Character::SetupPlayerInputComponent(class UInputComponent* PlayerInputC
     PlayerInputComponent->BindAction("Fire", IE_Released, this, &AD2Character::OnStopFire);
     PlayerInputComponent->BindAction("EquipPrimary", IE_Pressed, this, &AD2Character::EquipWeaponPrimary);
     PlayerInputComponent->BindAction("EquipSecondary", IE_Pressed, this, &AD2Character::EquipWeaponSecondary);
+    PlayerInputComponent->BindAction("Reload", IE_Pressed, this, &AD2Character::OnReload);
     
 
     
@@ -129,13 +130,21 @@ void AD2Character::OnFire()
 
  }
 
+void AD2Character::OnReload()
+{
+    if (currentWeapon != NULL)
+    {
+        currentWeapon->Reload();
+    }
+}
+
 void AD2Character::OnStartFire()
 {
     OnFire();
     
     if (currentWeapon != NULL)
     {
-        GetWorldTimerManager().SetTimer(TimerHandle, this, &AD2Character::OnFire, currentWeapon->TimeBetweenShots,
+        GetWorldTimerManager().SetTimer(TimerHandle, this, &AD2Character::OnFire, currentWeapon->RateOfFire,
                                         true);
     }
   
@@ -143,6 +152,8 @@ void AD2Character::OnStartFire()
 
 void AD2Character::OnStopFire()
 {
+    
+    
     GetWorldTimerManager().ClearTimer(TimerHandle);
 }
 

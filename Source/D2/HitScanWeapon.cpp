@@ -5,7 +5,8 @@
 
 //#include "Engine/Engine.h"
 
-void AHitScanWeapon::Shoot(AActor*)
+void AHitScanWeapon::Shoot(AActor* Player)
 {
+ Super::Shoot(Player);
    // GEngine->AddOnScreenDebugMessage(-1,2,FColor::Blue,TEXT("HitScan"));
 }
