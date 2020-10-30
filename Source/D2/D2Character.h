@@ -60,6 +60,25 @@ public:
     UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
     float BaseLookUpRate;
 
+    UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Ability)
+    float MeleeCooldown;
+
+    UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Ability)
+    float currentMeleeCooldown;
+
+    UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Ability)
+    float GrenadeCooldown;
+
+    UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Ability)
+    float currentGrenadeCooldown;
+
+
+    UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Ability)
+    float SuperCooldown;
+
+    UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Ability)
+    float currentSuperCooldown;
+
 
     FTimerHandle TimerHandle;
 
@@ -72,7 +91,6 @@ public:
     UFUNCTION(BlueprintCallable)
     void OnReload();
 
-   
 
     UFUNCTION(BlueprintCallable)
     void OnStartFire();

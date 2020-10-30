@@ -25,15 +25,13 @@
   <component name="ChangeListManager">
     <list default="true" id="3ea7791a-40c4-494f-bedc-b669ad96618d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.D2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.D2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_PickUpBase.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_PickUpBase.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_PrimaryAmmoPickUp.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_PrimaryAmmoPickUp.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/Cyclops.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Cyclops.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/Enemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Enemy.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Cyclops/Anim_Cyclops.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Cyclops/Anim_Cyclops.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/FirstPersonCPP/Blueprints/FirstPersonProjectile.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/FirstPersonCPP/Blueprints/FirstPersonProjectile.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/Strike.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/Strike.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/UMG/PIckupText.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UMG/PIckupText.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/D2/D2Projectile.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/D2/D2Projectile.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/D2/D2Projectile.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/D2/D2Projectile.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/D2/Weapon.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/D2/Weapon.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/D2/D2Character.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/D2/D2Character.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,13 +72,13 @@
         <option value="$PROJECT_DIR$/Source/D2/ProjectileWeapon.cpp" />
         <option value="$PROJECT_DIR$/Source/D2/ProjectileWeapon.h" />
         <option value="$PROJECT_DIR$/Source/D2/HitScanWeapon.h" />
-        <option value="$PROJECT_DIR$/Source/D2/D2Character.h" />
         <option value="$PROJECT_DIR$/Source/D2/HitScanWeapon.cpp" />
         <option value="$PROJECT_DIR$/Source/D2/D2Character.cpp" />
         <option value="$PROJECT_DIR$/Source/D2/Weapon.cpp" />
         <option value="$PROJECT_DIR$/Source/D2/D2Projectile.cpp" />
         <option value="$PROJECT_DIR$/Source/D2/D2Projectile.h" />
         <option value="$PROJECT_DIR$/Source/D2/Weapon.h" />
+        <option value="$PROJECT_DIR$/Source/D2/D2Character.h" />
       </list>
     </option>
   </component>
@@ -458,6 +456,7 @@
       <workItem from="1603974762650" duration="6371000" />
       <workItem from="1603994138647" duration="2297000" />
       <workItem from="1604044511454" duration="2160000" />
+      <workItem from="1604067843122" duration="1079000" />
     </task>
     <servers />
   </component>
