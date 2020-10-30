@@ -42,7 +42,7 @@ public:
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=WeaponData)
     float RateOfFire;
-    
+
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=WeaponData)
     int TotalAmmo;
 
@@ -51,8 +51,11 @@ public:
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=WeaponData)
     int currentAmmo;
-        
-        
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=WeaponData)
+    int BaseDamage;
+
+
     /** Sound to play each time we fire */
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=Gameplay)
     class USoundBase* FireSound;
@@ -67,7 +70,7 @@ public:
 
     UPROPERTY()
     bool canShoot;
-    
+
     void Reload();
 
 protected:
@@ -84,4 +87,5 @@ public:
     // Called every frame
     virtual void Tick(float DeltaTime) override;
     virtual void Shoot(AActor* Player);
+    FORCEINLINE int GetCurrentWeaponBaseDamage() const { return BaseDamage; }
 };
