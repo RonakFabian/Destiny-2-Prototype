@@ -24,7 +24,7 @@ void AD2HUD::DrawHUD()
 	// Draw very simple crosshair
 
 	// find center of the Canvas
-	const FVector2D Center(Canvas->ClipX * 0.5f, Canvas->ClipY * 0.5f);
+	const FVector2D Center(Canvas->ClipX * 0.5f-8, Canvas->ClipY * 0.5f-8);
 
 	// offset by half the texture's dimensions so that the center of the texture aligns with the center of the Canvas
 	const FVector2D CrosshairDrawPosition( (Center.X),

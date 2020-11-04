@@ -25,20 +25,17 @@
   <component name="ChangeListManager">
     <list default="true" id="3ea7791a-40c4-494f-bedc-b669ad96618d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.D2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.D2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_InteractTrigger.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_InteractTrigger.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Cyclops.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Cyclops.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Enemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Enemy.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Cyclops/AIC_Cyclop.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Cyclops/AIC_Cyclop.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Cyclops/Anim_Cyclops.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Cyclops/Anim_Cyclops.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/FPS_Weapon_Bundle/Weapons/Materials/Master_Material/M_RDS_Master.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/FPS_Weapon_Bundle/Weapons/Materials/Master_Material/M_RDS_Master.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/FPS_Weapon_Bundle/Weapons/Textures/RDS/T_RDS_01.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_MyHitScanWeapon.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_MyHitScanWeapon.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_ProjectileWeapon.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_ProjectileWeapon.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/FirstPersonCPP/Blueprints/FirstPersonProjectile.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/FirstPersonCPP/Blueprints/FirstPersonProjectile.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/Strike.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/Strike.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Quest/StrikeOne.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Quest/StrikeOne.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Tut/BTTask_Attack.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Tut/BTTask_Attack.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Tut/NPC_AI_Bp.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Tut/NPC_AI_Bp.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Tut/PatrolBB.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Tut/PatrolnAttack.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/UMG/DamageNumber.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UMG/DamageNumber.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/D2/D2HUD.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/D2/D2HUD.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/D2/HitScanWeapon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/D2/HitScanWeapon.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/D2/HitScanWeapon.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/D2/HitScanWeapon.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/D2/ProjectileWeapon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/D2/ProjectileWeapon.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/D2/Weapon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/D2/Weapon.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/D2/Weapon.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/D2/Weapon.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,17 +72,17 @@
         <option value="$PROJECT_DIR$/Source/D2/StructandEnum.h" />
         <option value="$PROJECT_DIR$/Source/D2/MIssionDriver.h" />
         <option value="$PROJECT_DIR$/Source/D2/MIssionDriver.cpp" />
-        <option value="$PROJECT_DIR$/Source/D2/ProjectileWeapon.cpp" />
         <option value="$PROJECT_DIR$/Source/D2/ProjectileWeapon.h" />
-        <option value="$PROJECT_DIR$/Source/D2/HitScanWeapon.h" />
-        <option value="$PROJECT_DIR$/Source/D2/HitScanWeapon.cpp" />
         <option value="$PROJECT_DIR$/Source/D2/D2Character.cpp" />
-        <option value="$PROJECT_DIR$/Source/D2/Weapon.cpp" />
         <option value="$PROJECT_DIR$/Source/D2/D2Projectile.cpp" />
         <option value="$PROJECT_DIR$/Source/D2/D2Projectile.h" />
-        <option value="$PROJECT_DIR$/Source/D2/Weapon.h" />
         <option value="$PROJECT_DIR$/Source/D2/D2Character.h" />
+        <option value="$PROJECT_DIR$/Source/D2/HitScanWeapon.h" />
+        <option value="$PROJECT_DIR$/Source/D2/ProjectileWeapon.cpp" />
+        <option value="$PROJECT_DIR$/Source/D2/Weapon.cpp" />
+        <option value="$PROJECT_DIR$/Source/D2/Weapon.h" />
         <option value="$PROJECT_DIR$/Source/D2/D2HUD.cpp" />
+        <option value="$PROJECT_DIR$/Source/D2/HitScanWeapon.cpp" />
       </list>
     </option>
   </component>
@@ -465,6 +462,10 @@
       <workItem from="1604044511454" duration="2160000" />
       <workItem from="1604067843122" duration="1079000" />
       <workItem from="1604334504777" duration="128000" />
+      <workItem from="1604487640028" duration="1422000" />
+      <workItem from="1604513085374" duration="1780000" />
+      <workItem from="1604514914858" duration="1323000" />
+      <workItem from="1604517650672" duration="1136000" />
     </task>
     <servers />
   </component>

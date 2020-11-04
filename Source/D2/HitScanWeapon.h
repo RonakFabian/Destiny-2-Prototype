@@ -12,8 +12,11 @@
 UCLASS()
 class D2_API AHitScanWeapon : public AWeapon
 {
-	GENERATED_BODY()
+    GENERATED_BODY()
 
-	void Shoot(AActor* ) override;
-	
+    void Shoot(AActor*) override;
+
+public:
+    UFUNCTION(BlueprintImplementableEvent)
+    void ShootImplementation();
 };

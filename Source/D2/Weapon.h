@@ -25,7 +25,7 @@ public:
 
 
     /** Location on gun mesh where projectiles should spawn. */
-    UPROPERTY(VisibleDefaultsOnly, Category = Mesh)
+    UPROPERTY(BlueprintReadWrite,EditDefaultsOnly, Category = Mesh)
     class USceneComponent* FP_MuzzleLocation;
 
     UPROPERTY(EditAnywhere, Category = Mesh)
@@ -68,8 +68,7 @@ public:
 
     void Unequip();
 
-    UPROPERTY()
-    bool canShoot;
+   
 
     void Reload();
 
@@ -78,6 +77,8 @@ protected:
     virtual void BeginPlay() override;
 
     /** Fires a projectile. */
+    UPROPERTY()
+    bool canShoot=true;
 
 
     //Interface
