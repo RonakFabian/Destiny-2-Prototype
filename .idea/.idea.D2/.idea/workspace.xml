@@ -25,12 +25,16 @@
   <component name="ChangeListManager">
     <list default="true" id="3ea7791a-40c4-494f-bedc-b669ad96618d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.D2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.D2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_InteractDoor.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_InteractDoor.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_MyHitScanWeapon.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_MyHitScanWeapon.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_PickUpBase.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_PickUpBase.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_ProjectileWeapon.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_ProjectileWeapon.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/FirstPersonCPP/Blueprints/FirstPersonCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/FirstPersonCPP/Blueprints/FirstPersonCharacter.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/FirstPersonCPP/Blueprints/FirstPersonProjectile.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/FirstPersonCPP/Blueprints/FirstPersonProjectile.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/Strike.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/Strike.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/UMG/CircleBarMat.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UMG/CircleBarMat.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/UMG/DamageNumber.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UMG/DamageNumber.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/D2/D2HUD.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/D2/D2HUD.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/UMG/GameHUD.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UMG/GameHUD.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/D2/HitScanWeapon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/D2/HitScanWeapon.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/D2/HitScanWeapon.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/D2/HitScanWeapon.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/D2/ProjectileWeapon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/D2/ProjectileWeapon.cpp" afterDir="false" />
@@ -77,12 +81,12 @@
         <option value="$PROJECT_DIR$/Source/D2/D2Projectile.cpp" />
         <option value="$PROJECT_DIR$/Source/D2/D2Projectile.h" />
         <option value="$PROJECT_DIR$/Source/D2/D2Character.h" />
-        <option value="$PROJECT_DIR$/Source/D2/HitScanWeapon.h" />
-        <option value="$PROJECT_DIR$/Source/D2/ProjectileWeapon.cpp" />
-        <option value="$PROJECT_DIR$/Source/D2/Weapon.cpp" />
-        <option value="$PROJECT_DIR$/Source/D2/Weapon.h" />
         <option value="$PROJECT_DIR$/Source/D2/D2HUD.cpp" />
+        <option value="$PROJECT_DIR$/Source/D2/Weapon.cpp" />
+        <option value="$PROJECT_DIR$/Source/D2/ProjectileWeapon.cpp" />
+        <option value="$PROJECT_DIR$/Source/D2/HitScanWeapon.h" />
         <option value="$PROJECT_DIR$/Source/D2/HitScanWeapon.cpp" />
+        <option value="$PROJECT_DIR$/Source/D2/Weapon.h" />
       </list>
     </option>
   </component>
@@ -104,6 +108,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunManager" selected="C++ Project.D2">
     <configuration name="D2" type="CppProject" factoryName="C++ Project">
@@ -466,6 +471,9 @@
       <workItem from="1604513085374" duration="1780000" />
       <workItem from="1604514914858" duration="1323000" />
       <workItem from="1604517650672" duration="1136000" />
+      <workItem from="1604600643392" duration="2233000" />
+      <workItem from="1604654894473" duration="4174000" />
+      <workItem from="1604660483684" duration="3645000" />
     </task>
     <servers />
   </component>
@@ -494,9 +502,9 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="810" y="443" key="#com.intellij.ide.actionMacro.EditMacrosDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1599917695858" />
-    <state x="616" y="270" key="run.anything.popup" timestamp="1603024060149">
+    <state x="616" y="270" key="run.anything.popup" timestamp="1604657235976">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="616" y="270" key="run.anything.popup/0.0.1920.1160@0.0.1920.1160" timestamp="1603024060149" />
+    <state x="616" y="270" key="run.anything.popup/0.0.1920.1160@0.0.1920.1160" timestamp="1604657235976" />
   </component>
 </project>

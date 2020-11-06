@@ -6,6 +6,8 @@
 
 void AProjectileWeapon::Shoot(AActor* Player)
 {
+ if (canShoot)
+    {
     const FRotator SpawnRotation = FP_MuzzleLocation->GetRightVector().Rotation();
 
     // MuzzleOffset is in camera space, so transform it to world space before offsetting from the character location to find the final muzzle position
@@ -19,8 +21,7 @@ void AProjectileWeapon::Shoot(AActor* Player)
         ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButDontSpawnIfColliding;
     UWorld* const World = GetWorld();
 
-    if (canShoot)
-    {
+   
         Super::Shoot(Player);
 
 

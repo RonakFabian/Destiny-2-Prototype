@@ -18,5 +18,5 @@ class D2_API AHitScanWeapon : public AWeapon
 
 public:
     UFUNCTION(BlueprintImplementableEvent)
-    void ShootImplementation();
+    void ShootImplementation(FHitResult HitResult);
 };

@@ -28,10 +28,10 @@ public:
     UPROPERTY(BlueprintReadWrite,EditDefaultsOnly, Category = Mesh)
     class USceneComponent* FP_MuzzleLocation;
 
-    UPROPERTY(EditAnywhere, Category = Mesh)
+    UPROPERTY(EditAnywhere,BlueprintReadWrite, Category = Mesh)
     class UParticleSystem* MuzzleParticle;
 
-    UPROPERTY(EditAnywhere, Category = Mesh)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite,Category = Mesh)
     class UParticleSystem* ImpactParticle;
 
 
@@ -44,16 +44,19 @@ public:
     float RateOfFire;
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=WeaponData)
-    int TotalAmmo;
+    int32 ammoPool;
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=WeaponData)
-    int MagazineSize;
+    int32 loadedAmmo;
 
-    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=WeaponData)
-    int currentAmmo;
-
+ UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=WeaponData)
+    int32 MagazinePool;
+   
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=WeaponData)
     int BaseDamage;
+    
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=WeaponData)
+    int ReloadTime;
 
 
     /** Sound to play each time we fire */
@@ -71,6 +74,9 @@ public:
    
 
     void Reload();
+    
+    UFUNCTION(BlueprintImplementableEvent)
+    void ReloadUI();
 
 protected:
     // Called when the game starts or when spawned
@@ -79,6 +85,9 @@ protected:
     /** Fires a projectile. */
     UPROPERTY()
     bool canShoot=true;
+
+    UPROPERTY()
+    bool canReload=true;
 
 
     //Interface

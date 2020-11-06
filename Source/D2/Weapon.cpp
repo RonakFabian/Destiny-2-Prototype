@@ -22,7 +22,12 @@ AWeapon::AWeapon()
     FP_MuzzleLocation = CreateDefaultSubobject<USceneComponent>(TEXT("MuzzleLocation"));
     FP_MuzzleLocation->SetupAttachment(FP_Gun);
     FP_MuzzleLocation->SetRelativeLocation(FVector(0.2f, 48.4f, -10.6f));
+    
     canShoot = true;
+    canReload=false;
+    
+    
+    	
     // Default offset from the character location for projectiles to spawn
     GunOffset = FVector(100.0f, 0.0f, 10.0f);
 }
@@ -31,24 +36,26 @@ AWeapon::AWeapon()
 void AWeapon::BeginPlay()
 {
     Super::BeginPlay();
-    canShoot=true;
-    TotalAmmo -= MagazineSize;
-    currentAmmo = MagazineSize;
+    
+  
 }
 
 void AWeapon::Shoot(AActor* Player)
 {
-    if (currentAmmo == 0)
-    {
-        Reload();
-        canShoot=false;
-        return;
-    }
-    if (currentAmmo > 0)
-    {
-        canShoot=true;
 
-        currentAmmo--;
+    if(loadedAmmo==0)
+    {
+         canShoot = false;
+        canReload=false;
+    return;
+    }
+    else
+    {
+     canShoot = true;
+            canReload=true;
+
+       loadedAmmo--;
+  
 
 
         auto Mesh = Cast<AD2Character>(Player)->Mesh1P;
@@ -73,14 +80,10 @@ void AWeapon::Shoot(AActor* Player)
             UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), MuzzleParticle,
                                                      FP_MuzzleLocation->GetComponentTransform());
         }
-    }
-    
-     if (TotalAmmo == 0)
-        {
-            
-            canShoot=false;
-            return;
         }
+    
+    
+   
 }
 
 void AWeapon::SetUpAttachment(USkeletalMeshComponent* Mesh)
@@ -106,32 +109,28 @@ void AWeapon::Unequip()
 
 void AWeapon::Reload()
 {
-    if (currentAmmo != MagazineSize)
+   if(ammoPool==0 || loadedAmmo>=MagazinePool){return;}
+
+    if(ammoPool<(MagazinePool-loadedAmmo))
     {
-        canShoot=true;
-        //20=-(6-1)=19
-
-        if (TotalAmmo <= MagazineSize)
-        {
-            currentAmmo = TotalAmmo;
-            TotalAmmo = 0;
-        }
-        else
-        {
-            TotalAmmo -= (MagazineSize - currentAmmo);
-            currentAmmo=MagazineSize;
-            
-        }
+        loadedAmmo=loadedAmmo+ammoPool;
+        ammoPool=0;
     }
-    
-
-
-    //10
-    //4-0
+    else
+    {
+        ammoPool=ammoPool-(MagazinePool-loadedAmmo);
+        loadedAmmo=MagazinePool;
+    }
 }
 
 // Called every frame
 void AWeapon::Tick(float DeltaTime)
 {
     Super::Tick(DeltaTime);
+if(loadedAmmo==0 )
+{
+    Reload();
+    
+}
+   
 }
