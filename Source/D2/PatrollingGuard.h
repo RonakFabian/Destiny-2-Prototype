@@ -16,10 +16,8 @@ class D2_API APatrollingGuard : public ATP_ThirdPersonCharacter
 {
     GENERATED_BODY()
 protected:
+    
     virtual void BeginPlay() override;
     virtual void Tick(float delta) override;
-
-
-
   
 };

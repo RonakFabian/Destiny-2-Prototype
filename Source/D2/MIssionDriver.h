@@ -36,17 +36,20 @@ public:
     UPROPERTY( EditAnywhere)
     UDataTable* MissionScriptTable;
 
-    UPROPERTY( EditAnywhere)
+    UPROPERTY( EditAnywhere, BlueprintReadWrite)
     TArray<FMissionData> MissionData;
 
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(EditAnywhere,BlueprintReadWrite)
     int32 currentMissionEventIndex;
 
-    UFUNCTION(BlueprintCallable,CallInEditor)
+    UFUNCTION(BlueprintCallable,CallInEditor, Category= LoadScript)
     void LoadMissionScript();
 
     UFUNCTION(BlueprintCallable)
     void ExecuteNextMissionEvent();
+
+    UFUNCTION(BlueprintImplementableEvent)
+ void UpdateUI();
 
 
     void Delay();

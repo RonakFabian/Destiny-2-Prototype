@@ -45,6 +45,7 @@ void AMIssionDriver::LoadMissionScript()
 
 void AMIssionDriver::ExecuteNextMissionEvent()
 {
+    
     UE_LOG(LogTemp, Warning, TEXT("ExecuteNextMissionEvent"));
     currentMissionEventIndex++;
     if (MissionData.IsValidIndex(currentMissionEventIndex))
@@ -101,6 +102,8 @@ void AMIssionDriver::ExecuteNextMissionEvent()
     {
         UE_LOG(LogTemp, Warning, TEXT("Reached EOS or Invalid Mission Event Index"));
     }
+
+    UpdateUI();
 }
 
 // GetWorldTimerManager().SetTimer(TimerHandle, this , &Method, DelayBetweenLoops , LoopTheTimer, FirstDelayInSeconds);

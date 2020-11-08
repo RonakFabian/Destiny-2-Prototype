@@ -30,6 +30,7 @@ enum class FMissionEventType : uint8
     Delay
 };
 
+
 UENUM(BlueprintType)
 enum class FMissionReturnType: uint8
 {
@@ -38,14 +39,27 @@ enum class FMissionReturnType: uint8
     AfterDialogue
 };
 
+
 USTRUCT(BlueprintType)
-struct FMissionData:public FTableRowBase
+struct FMissionData : public FTableRowBase
 {
     GENERATED_USTRUCT_BODY()
-    
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Mission Description")
+    FString MissionName;
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Mission Description")
+    FString MissionInfo;
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Mission Description")
+    bool hasCountRequirement;
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Mission Description")
+    int32 TotalCountRequirement;
+
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Mission Event")
     FMissionEventType MissionEventType;
-    
+
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Mission Event")
     FMissionReturnType MissionReturnType;
 
