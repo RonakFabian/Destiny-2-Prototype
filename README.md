@@ -4,13 +4,14 @@ A project based on Destiny 2's mission/objective system:
 
 A case study of mission/strikes in Destiny 2 a tool to manage the linear progression in its mission events.They include:
 
-Travel Mission: Send the player down a set path.
 
-Destroy Mission: Elimate enemies in an area or level.
+- Travel Mission: Send the player down a set path.
 
-Collect Mission: Get your player to collect a certain amount of coins or your whatever you desire.
+- Destroy Mission: Elimate enemies in an area or level.
 
-Interact Mission: Get your player to iteract with an entity placed in the world.
+- Collect Mission: Get your player to collect a certain amount of coins or your whatever you desire.
+
+- Interact Mission: Get your player to iteract with an entity placed in the world.
 
 
 
